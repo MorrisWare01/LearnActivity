@@ -3,7 +3,7 @@
 
 #### 当activity为singleTask/singleInstance启动模式时，使用startActivityForResult启动activity会怎么样
 
-在api5.0之前将会直接返回Context.CANCEL，在api5.0之后启动行为会和standard一样
+在api5.0之前将会直接返回Activity.RESULT_CANCELED，在api5.0之后启动行为会和standard一样
 
 
 > [任务和返回栈](https://developer.android.google.cn/guide/components/tasks-and-back-stack?hl=zh-cn)
