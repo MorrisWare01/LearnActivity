@@ -1,31 +1,9 @@
 ## LearnActivity
 
-#### Activity启动流程
 
-> [framework来自master分支](https://github.com/aosp-mirror/platform_frameworks_base)
-(git快速下载命令：
-git clone --branch pie-release https://github.com/aosp-mirror/platform_frameworks_base.git --depth 1
-)
+#### 当activity为singleTask/singleInstance启动模式时，使用startActivityForResult启动activity会怎么样
 
-
-点击Home界面的一个应用图标
-```java
-android.app.LauncherActivity.java
-
-
-
-
-
-```
-
-
-
-
-
-
-
-
-
+在api5.0之前将会直接返回Context.CANCEL，在api5.0之后启动行为会和standard一样
 
 
 > [任务和返回栈](https://developer.android.google.cn/guide/components/tasks-and-back-stack?hl=zh-cn)
@@ -52,6 +30,26 @@ android.app.LauncherActivity.java
 ##### 典型情况
 
 ##### 异常情况
+
+
+
+#### Activity启动流程
+
+> [framework来自master分支](https://github.com/aosp-mirror/platform_frameworks_base)
+(git快速下载命令：
+git clone --branch pie-release https://github.com/aosp-mirror/platform_frameworks_base.git --depth 1
+)
+
+
+点击Home界面的一个应用图标
+```java
+android.app.LauncherActivity.java
+
+
+
+
+
+```
 
 
 
